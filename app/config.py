@@ -1,5 +1,7 @@
 GOOGLE_API="AIzaSyBkFhUMEuDdlSBXYp18Pmy7bMKwK0M7IrM"
 
+#API2="AIzaSyBTJO--mz4TUDXpERw4RA_2W9hPC7g4ydo"
+
 # Azure
 # username: b1ab150072e646
 # password: bb81da90
