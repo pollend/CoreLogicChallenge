@@ -4,5 +4,5 @@ GOOGLE_API="AIzaSyBkFhUMEuDdlSBXYp18Pmy7bMKwK0M7IrM"
 # username: b1ab150072e646
 # password: bb81da90
 # connection: Database=corelogic;Data Source=us-cdbr-azure-central-a.cloudapp.net;User Id=b1ab150072e646;Password=bb81da90
-# DATABASE="mysql://b1ab150072e646:bb81da90@us-cdbr-azure-central-a.cloudapp.net/corelogic"
-DATABASE = "mysql://root@localhost/corelogic_temp"
+DATABASE="mysql://b1ab150072e646:bb81da90@us-cdbr-azure-central-a.cloudapp.net/corelogic"
+# DATABASE = "mysql://root@localhost/corelogic_temp"
