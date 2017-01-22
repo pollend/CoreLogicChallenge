@@ -25,10 +25,10 @@ longitude = -117.216
 # X,Y = np.meshgrid(x_axis,y_axis, sparse=True)
 # Z = np.sqrt (X * X + Y * Y) 
 
-iterations = 150
+iterations = 500
 
-xr = np.linspace(lat-5,lat+5, iterations)
-yr = np.linspace(longitude-5,longitude+5, iterations)
+xr = np.linspace(lat-0.005,lat+0.005, iterations)
+yr = np.linspace(longitude-0.005,longitude+0.005, iterations)
 print(xr)
 X, Y = np.meshgrid(xr, yr)
 
@@ -51,9 +51,9 @@ cset = ax.contourf(X, Y, Z, zdir='z', offset=0, cmap=cm.coolwarm)
 # cset = ax.contourf(X, Y, Z, zdir='y', offset=(longitude+5), cmap=cm.coolwarm)
 
 ax.set_xlabel('lat')
-ax.set_xlim(lat-5, lat+5)
+ax.set_xlim(lat-0.005, lat+0.005)
 ax.set_ylabel('long')
-ax.set_ylim(longitude-5,longitude+5)
+ax.set_ylim(longitude-0.005,longitude+0.005)
 # ax.set_zlabel('Z')
 # ax.set_zlim(0, 100)
 
