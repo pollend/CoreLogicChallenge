@@ -26,8 +26,8 @@ try:
         id = int(row[0])
         lat = float(row[1])
         lng = float(row[2])
-        ele = float(elevation_data.get_elevation(lng,lat))
-        print elevation_data.get_elevation(lng,lat)
+        ele = float(elevation_data.get_elevation(lat,lng))
+        print elevation_data.get_elevation(lat,lng)
         cursor2.execute("""UPDATE elevation SET elevation=%f WHERE id =%d"""%(ele,id))
         db.commit()
         

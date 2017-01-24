@@ -25,7 +25,7 @@ longitude = -117.216
 # X,Y = np.meshgrid(x_axis,y_axis, sparse=True)
 # Z = np.sqrt (X * X + Y * Y) 
 
-iterations = 500
+iterations = 20
 
 xr = np.linspace(lat-0.005,lat+0.005, iterations)
 yr = np.linspace(longitude-0.005,longitude+0.005, iterations)
