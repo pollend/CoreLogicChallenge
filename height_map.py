@@ -62,15 +62,15 @@ cset = ax.contourf(X, Y, Z, zdir='z', offset=0, cmap=cm.coolwarm)
 # cset = ax.contourf(X, Y, Z, zdir='x', offset=(lat-5), cmap=cm.coolwarm)
 # cset = ax.contourf(X, Y, Z, zdir='y', offset=(longitude+5), cmap=cm.coolwarm)
 
-a = Arrow3D([lat + .006, lat + .006], [longitude, longitude + .003], [0,0], mutation_scale=20, lw=3, arrowstyle="-|>", color="r")
-ax.add_artist(a)
+ax.add_artist(Arrow3D([lat + .006, lat + .006], [longitude, longitude + .003], [0,0], mutation_scale=20, lw=3, arrowstyle="-|>", color="r"))
 
+ax.ticklabel_format(useOffset=False)
 
-ax.set_xlabel('lat')
-ax.set_xlim(lat-0.005, lat+0.005)
-ax.set_ylabel('long')
-ax.set_ylim(longitude-0.005,longitude+0.005)
-# ax.set_zlabel('Z')
+ax.set_xlabel('latitude')
+ax.set_xlim([lat-0.005, lat+0.005])
+ax.set_ylabel('longitude')
+ax.set_ylim([longitude-0.005,longitude+0.005])
+ax.set_zlabel('Elevation (m)')
 # ax.set_zlim(0, 100)
 
 plt.show()
